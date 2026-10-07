@@ -1,0 +1,157 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  background: #f1f5f9;
+  color: #0f172a;
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* El marcador queda fijo arriba para que los puntos se vean siempre. */
+.marcador {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.75rem 1.5rem;
+  background: #1e3a8a;
+  color: white;
+  box-shadow: 0 2px 8px rgb(0 0 0 / 0.15);
+}
+
+.marcador h1 {
+  margin: 0;
+  font-size: 1.25rem;
+}
+
+.puntos {
+  margin: 0;
+  font-size: 1.125rem;
+}
+
+.puntos strong {
+  display: inline-block;
+  min-width: 3ch;
+  padding: 0.125rem 0.5rem;
+  border-radius: 6px;
+  background: white;
+  color: #1e3a8a;
+  text-align: center;
+}
+
+.juego {
+  flex: 1;
+  width: 100%;
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.timer {
+  width: 100%;
+  color: #1e3a8a;
+}
+
+.timer p {
+  margin: 0 0 0.375rem;
+  text-align: center;
+}
+
+.timer-barra {
+  height: 8px;
+  border-radius: 999px;
+  background: #cbd5e1;
+  overflow: hidden;
+}
+
+.timer-relleno {
+  height: 100%;
+  background: #2563eb;
+  transition: width 1s linear;
+}
+
+.timer.poco-tiempo {
+  color: #b91c1c;
+}
+
+.timer.poco-tiempo .timer-relleno {
+  background: #dc2626;
+}
+
+.bandera {
+  width: 100%;
+  max-height: 260px;
+  object-fit: contain;
+  border-radius: 8px;
+  background: white;
+  padding: 0.75rem;
+  box-shadow: 0 4px 16px rgb(0 0 0 / 0.1);
+}
+
+.formulario {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  width: 100%;
+}
+
+.formulario input {
+  flex: 1;
+  min-width: 0;
+  padding: 0.75rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.formulario button {
+  padding: 0.75rem 1.25rem;
+  border: none;
+  border-radius: 6px;
+  background: #2563eb;
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.formulario button:hover {
+  background: #1d4ed8;
+}
+
+.aviso {
+  margin: 0;
+  padding: 0.75rem 1rem;
+  border-radius: 6px;
+  text-align: center;
+  background: #e2e8f0;
+}
+
+.aviso.acierto {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.aviso.error {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+.aviso.tiempo {
+  background: #fef3c7;
+  color: #92400e;
+}
