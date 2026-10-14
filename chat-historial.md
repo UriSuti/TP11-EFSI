@@ -451,4 +451,28 @@ Hay dos formas de que aparezca en `main`:
 - **Subir la rama y abrir un Pull Request:** subo `ranking-pistas-banderas` y lo pasás a `main` desde GitHub. Sirve si querés revisar los cambios antes.
 
 ¿Cuál hago?
+
+---
+
+### Usuario — 2026-10-14 10:28
+
+Subilo
+
+### Claude
+
+El hook actualizó `chat-historial.md` con los últimos mensajes después del commit, y git no deja cambiar de rama con ese cambio pendiente. Lo agrego en un commit chico y sigo:
+
+Se subió. Antes de cerrar, en el historial apareció un commit `14-10` que no hice yo. Me fijo qué contiene:
+
+Ya está en GitHub, en `main`. Si recargás la página de commits van a aparecer estos tres, además de "first commit":
+
+- `596cb04` Agregar ranking, pistas y evitar banderas repetidas o rotas
+- `adbde14` 14-10
+- `3559443` Actualizar historial del chat
+
+**Para que sepas:**
+- Antes de pasarlo a `main` tuve que hacer un commit chico con `chat-historial.md`, porque el hook lo había actualizado con los últimos mensajes y git no dejaba cambiar de rama.
+- El commit `14-10` no lo hice yo. Es del 14/10 a las 10:26, solo agrega 16 líneas a `chat-historial.md` y figura como autor **NICOLAS CUKIER**. Seguramente lo hizo alguien desde esta computadora mientras trabajábamos. Lo subí junto con el resto porque ya estaba en la rama.
+- Como esa es la configuración de git de esta compu, mis commits también deben figurar en GitHub a nombre de NICOLAS CUKIER y no de URIEL SUTI. Si querés que salgan a tu nombre, se configura con `git config user.name` y `git config user.email` en este repo.
+- La rama `ranking-pistas-banderas` sigue existiendo en tu compu pero ya no hace falta, porque todo está en `main`. Si querés, la borro.
 <!-- /session:c8a02265-4a2e-4922-aed5-331381e1f315 -->
