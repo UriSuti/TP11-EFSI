@@ -415,4 +415,20 @@ Los cambios están en [paises.js](src/utils/paises.js), [GameProvider.jsx](src/c
 **Una cosa que no toqué:** hay países distintos con banderas casi idénticas, como Chad y Rumania o Indonesia y Mónaco. Pueden salir en la misma partida, y no hay forma de distinguirlas a ojo. Si querés, hago que en esos pares se acepte cualquiera de los dos nombres.
 
 Sigue todo sin commitear (ranking, pistas y estos arreglos).
+
+---
+
+### Usuario — 2026-10-14 10:25
+
+Commitea
+
+### Claude
+
+Listo: hice el commit `596cb04` en una rama nueva, `ranking-pistas-banderas`. Incluye todo lo que estaba pendiente y no quedó nada sin commitear.
+
+- **Un solo commit:** el ranking, las pistas y los arreglos de banderas cambian los mismos archivos, así que separarlos en tres commits no era práctico. El mensaje del commit detalla cada parte.
+- **Rama nueva:** lo puse en una rama aparte para no tocar `main`. Si preferís tenerlo directo en `main`, lo paso con un merge.
+- **No hice push.** Avisame si querés subirlo.
+
+Git mostró avisos "LF will be replaced by CRLF". Solo cambian el formato de los saltos de línea, no el código.
 <!-- /session:c8a02265-4a2e-4922-aed5-331381e1f315 -->
