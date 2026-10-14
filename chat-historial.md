@@ -475,4 +475,20 @@ Ya está en GitHub, en `main`. Si recargás la página de commits van a aparecer
 - El commit `14-10` no lo hice yo. Es del 14/10 a las 10:26, solo agrega 16 líneas a `chat-historial.md` y figura como autor **NICOLAS CUKIER**. Seguramente lo hizo alguien desde esta computadora mientras trabajábamos. Lo subí junto con el resto porque ya estaba en la rama.
 - Como esa es la configuración de git de esta compu, mis commits también deben figurar en GitHub a nombre de NICOLAS CUKIER y no de URIEL SUTI. Si querés que salgan a tu nombre, se configura con `git config user.name` y `git config user.email` en este repo.
 - La rama `ranking-pistas-banderas` sigue existiendo en tu compu pero ya no hace falta, porque todo está en `main`. Si querés, la borro.
+
+---
+
+### Usuario — 2026-10-14 10:29
+
+Falta subir un archivo
+
+### Claude
+
+El único archivo con cambios sin subir es `chat-historial.md`. El hook lo vuelve a actualizar con cada mensaje, así que después del último push volvió a cambiar. Lo subo:
+
+Subí `chat-historial.md` en el commit `574ba5c`. Ahora no queda ningún archivo sin subir y tu compu está igual que GitHub.
+
+Este archivo va a volver a cambiar con cada mensaje que nos mandemos, porque el hook lo actualiza solo. Es normal que vuelva a aparecer como pendiente, y alcanza con subirlo cuando terminemos de trabajar.
+
+Si te referías a otro archivo, decime cuál. No hay ningún otro archivo modificado ni sin subir, salvo `node_modules` y `dist`, que no se suben a propósito.
 <!-- /session:c8a02265-4a2e-4922-aed5-331381e1f315 -->
