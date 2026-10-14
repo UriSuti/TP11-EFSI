@@ -2,12 +2,24 @@ import { useContext } from 'react'
 import { GameContext } from '../context/GameContext'
 
 function Flag() {
-  const { paisActual, error } = useContext(GameContext)
+  const { paisActual, banderaLista, marcarBanderaLista, descartarBandera } = useContext(GameContext)
 
-  if (error) return <p className="aviso error">{error}</p>
-  if (!paisActual) return <p className="aviso">Cargando países...</p>
+  return (
+    <div className="bandera-contenedor">
+      {!banderaLista && <p className="aviso">Cargando bandera...</p>}
 
-  return <img className="bandera" src={paisActual.flag} alt="Bandera del país a adivinar" />
+      {/* La key hace que cada bandera sea una imagen nueva, con sus propios avisos de carga o error. */}
+      <img
+        key={paisActual.flag}
+        className="bandera"
+        src={paisActual.flag}
+        alt="Bandera del país a adivinar"
+        hidden={!banderaLista}
+        onLoad={marcarBanderaLista}
+        onError={() => descartarBandera(paisActual.flag)}
+      />
+    </div>
+  )
 }
 
 export default Flag
