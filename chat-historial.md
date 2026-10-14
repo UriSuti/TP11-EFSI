@@ -431,4 +431,24 @@ Listo: hice el commit `596cb04` en una rama nueva, `ranking-pistas-banderas`. In
 - **No hice push.** Avisame si querés subirlo.
 
 Git mostró avisos "LF will be replaced by CRLF". Solo cambian el formato de los saltos de línea, no el código.
+
+---
+
+### Usuario — 2026-10-14 10:27
+
+No aparece el commit. Porque?
+
+### Claude
+
+No aparece por dos motivos:
+
+1. **El commit está solo en tu computadora.** Hice el commit pero no hice `git push`, así que GitHub todavía no lo tiene.
+2. **Está en otra rama.** El commit está en `ranking-pistas-banderas`, y GitHub te muestra `main`. Aunque lo suba, en `main` no aparece hasta que se haga un merge.
+
+Hay dos formas de que aparezca en `main`:
+
+- **Pasarlo a `main` y subirlo:** hago `git checkout main`, `git merge ranking-pistas-banderas` y `git push`. Es lo más simple para un TP.
+- **Subir la rama y abrir un Pull Request:** subo `ranking-pistas-banderas` y lo pasás a `main` desde GitHub. Sirve si querés revisar los cambios antes.
+
+¿Cuál hago?
 <!-- /session:c8a02265-4a2e-4922-aed5-331381e1f315 -->
