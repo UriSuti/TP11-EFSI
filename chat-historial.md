@@ -491,4 +491,18 @@ Subí `chat-historial.md` en el commit `574ba5c`. Ahora no queda ningún archivo
 Este archivo va a volver a cambiar con cada mensaje que nos mandemos, porque el hook lo actualiza solo. Es normal que vuelva a aparecer como pendiente, y alcanza con subirlo cuando terminemos de trabajar.
 
 Si te referías a otro archivo, decime cuál. No hay ningún otro archivo modificado ni sin subir, salvo `node_modules` y `dist`, que no se suben a propósito.
+
+---
+
+### Usuario — 2026-10-14 10:29
+
+Pero dice ahí que no está subido
+
+### Claude
+
+Subí las líneas que faltaban en el commit `67ef27f`, y ahora GitHub tiene todo lo que había en la compu.
+
+Aun así, en unos segundos vas a volver a ver `chat-historial.md` como modificado, porque el hook le va a agregar esta respuesta. No significa que haya fallado el push: el archivo se actualiza solo con cada mensaje, así que nunca va a quedar al día del todo mientras sigamos hablando.
+
+Lo más práctico es subirlo una sola vez cuando terminemos de trabajar. Así entra el historial completo y no se llena GitHub de commits "Actualizar historial del chat". Cuando quieras cerrar, decime y lo subo.
 <!-- /session:c8a02265-4a2e-4922-aed5-331381e1f315 -->
